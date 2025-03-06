@@ -57,6 +57,7 @@ h2 {
     color: #f39c12;
     margin-bottom: 10px;
     text-decoration: underline;
+    text-align: center;
 }
 
 ul {
@@ -120,4 +121,7 @@ footer a:hover {
         margin-left: 0;
         margin-bottom: 10px;
     }
+}
+#main_kottor{
+    background-color: #e9c2cd;
 }

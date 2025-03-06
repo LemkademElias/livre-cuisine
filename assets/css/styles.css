@@ -1,0 +1,127 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9c2cd;
+    color: #333;
+}
+
+/* En-tête de la page */
+header {
+    background-color: #2d3e50;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Section principale */
+main {
+    padding: 30px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #f39c12;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ol {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+ol li {
+    margin-bottom: 12px;
+}
+
+/* Image de la recette */
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+/* Réactions au survol */
+footer a:hover {
+    color: #f39c12;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+#main_kottor{
+    background-color: #e9c2cd;
+}

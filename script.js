@@ -41,3 +41,15 @@ boutonNewsletter.addEventListener('click', function() {
     }
 });
 
+// Lien "Recettes du chef" avec confirmation avant redirection
+let lienRecettes = document.querySelector('a[href="https://lemkademelias.github.io/livre-cuisine/ "]');
+
+lienRecettes.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    let confirmation = confirm("Voulez-vous vraiment visiter les recettes du chef ?");
+
+    if (confirmation) {
+        window.location.href = lienRecettes.href;
+    }
+});

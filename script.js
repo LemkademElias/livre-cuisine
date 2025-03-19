@@ -26,3 +26,18 @@ cards.forEach(function(card) {
     });
 });
 
+// Footer - inscription newsletter
+let boutonNewsletter = document.getElementById('subscribeBtn');
+let champEmail = document.getElementById('newsletterEmail');
+
+boutonNewsletter.addEventListener('click', function() {
+    let email = champEmail.value;
+
+    if (email === '') {
+        alert("Veuillez entrer une adresse email !");
+    } else {
+        alert("Merci de vous être inscrit à la newsletter !");
+        champEmail.value = '';
+    }
+});
+

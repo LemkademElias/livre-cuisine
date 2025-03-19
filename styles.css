@@ -12,10 +12,17 @@ body {
     color: #333;
 }
 
-/* En-tête de la page */
+/* En-tête */
 header {
     background-color: #2d3e50;
     padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
 }
 
 .navbar-brand {
@@ -34,16 +41,13 @@ header {
     color: #f39c12;
 }
 
-.navbar-toggler-icon {
-    background-color: #fff;
-}
-
-/* Section principale */
+/* Main */
 main {
     padding: 30px 15px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
 h1 {
@@ -52,47 +56,42 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 1.8rem;
-    color: #f39c12;
-    margin-bottom: 10px;
-    text-decoration: underline;
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.1rem;
-    color: #333;
+.card {
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
 }
 
-ul li {
-    margin-bottom: 8px;
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
-ol {
-    font-size: 1.1rem;
-    color: #333;
-}
-
-ol li {
-    margin-bottom: 12px;
-}
-
-/* Image de la recette */
-img.img-fluid {
+.img-fluid {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-/* Pied de page */
+/* Footer */
 footer {
     background-color: #2d3e50;
     color: #fff;
     padding: 20px 0;
-    font-size: 1rem;
+    text-align: center;
 }
 
 footer a {
@@ -106,18 +105,27 @@ footer a:hover {
     color: #f39c12;
 }
 
-/* Réactions au survol */
-footer a:hover {
-    color: #f39c12;
+.newsletter {
+    margin-top: 15px;
 }
 
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
 
-    .navbar-nav .nav-link {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #d97706;
 }
